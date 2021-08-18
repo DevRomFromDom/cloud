@@ -1,0 +1,11 @@
+<div class="lessons__container">
+    <ul class="lessons__titles">
+        <li class="lesson-title date-title">Дата начала</li>
+        <li class="lesson-title name-title">Название</li>
+        <li class="lesson-title studens-title">Участников</li>
+        <li class="lesson-title trainer-title">Тренер</li>
+        <li class="lesson-title progress-title">Прогресс</li>
+    </ul>
+    <app-lessons-item *ngFor="let lesson of lessons" [lesson]="lesson" class="lessons"></app-lessons-item>
+</div>
+

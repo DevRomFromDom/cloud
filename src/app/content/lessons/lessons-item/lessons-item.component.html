@@ -1,0 +1,7 @@
+<div class="lesson-item__container">
+  <div class="lesson-date lesson-item" >{{ lesson.date | date:'dd MMM, h:mm' }}</div>
+  <div class="lesson-name lesson-item">{{ lesson.name }}</div>
+  <div class="lesson-students lesson-item">{{ lesson.students }}</div>
+  <div class="lesson-trainer lesson-item">{{ lesson.trainer }}</div>
+  <div class="lesson-progress lesson-item"><app-progress-icon></app-progress-icon> {{lesson.progress }}</div>
+</div>

@@ -1,0 +1,17 @@
+.filters__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.filters__main{
+    display: flex;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.filter-item{
+    margin-right: 30px;
+}
+.sub-filter__info{
+    display: flex;
+  }
