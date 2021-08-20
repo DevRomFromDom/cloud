@@ -1,13 +1,16 @@
 .lessons__container {
   width: 100%;
+  position: relative;
 }
 
 .lessons__titles {
   display: flex;
 }
 .lesson-title {
- margin: 27px 30px 27px 0 ;
-  font-family: Montserrat;
+ margin: 27px 0 10px 0 ;
+ display: flex;
+ justify-content: flex-start;
+  font-family: Montserrat-normal;
   font-style: normal;
   font-weight: 500;
   font-size: 10px;
@@ -22,5 +25,53 @@
   color: rgba(0, 0, 0, 0.54);
 }
 .lessons{
-  width: 100%;
+  width: 90%;
+}
+.date-title {
+  width: 10%;
+  @media  (max-width: 992px){
+    width: 12%;
+  }
+  @media  (max-width: 768px){
+    width: 14%;
+  }
+  
+}
+.name-title {
+  max-width: 500px;
+  width: 50%;
+  @media  (max-width: 992px){
+    width: 40%;
+  }
+  @media  (max-width: 768px){
+    width: 30%;
+  }
+}
+.studens-title {
+  width: 10%;
+  @media  (max-width: 992px){
+    width: 12%;
+  }
+  @media  (max-width: 768px){
+    width: 14%;
+  }
+}
+.trainer-title {
+  width: 10%;
+  @media  (max-width: 992px){
+    width: 12%;
+  }
+  @media  (max-width: 768px){
+    width: 14%;
+  }
+}
+.progress-title {
+  padding-left: 8px;
+  width: 10%;
+  @media  (max-width: 992px){
+    width: 12%;
+  }
+  @media  (max-width: 768px){
+    width: 16%;
+  }
 }

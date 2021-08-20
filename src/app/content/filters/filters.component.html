@@ -1,13 +1,13 @@
 <div class="filters__container">
   <div class="filters__main">
-    <div class="search-filter filter-item">Search</div>
-    <div class="content-filter filter-item">Content</div>
+    <div class="search-filter filter-item"><input class="search-input" placeholder="Поиск"/></div>
+    <div class="content-filter filter-item"><app-select class="select-program" [title]="'Программа'" [optionsArray]="programms"></app-select></div>
     <div class="period-filter filter-item">Period</div>
-    <div class="status-filter filter-item">Status</div>
+    <div class="status-filter filter-item"><app-select class="select-status" [title]="'Статус'" [optionsArray]="statuses"></app-select></div>
   </div>
   <div class="sub-filter__info">
-      <div class="lessons-counter">Counter</div>
-      <div class="filter-settings">Settings</div>
-      <div class="reset-filter">Х Сбросить</div>
+    <div class="lessons-counter">{{ lessons.length }} сессии</div>
+    <button class="filter-settings"><app-edit-settings class="edit-setings"></app-edit-settings></button>
+    <button class="reset-filter">Сбросить</button>
   </div>
 </div>

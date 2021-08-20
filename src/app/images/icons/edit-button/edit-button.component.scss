@@ -1,0 +1,20 @@
+.editButton__container{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50px;
+    background: transparent;
+    &:hover{
+        background: #EEEEEE;
+    }
+    &:focus{
+        background: #E4E4E4;
+    }
+    &.active{
+        background: #DCDCDC;
+    }
+    border: none;
+}

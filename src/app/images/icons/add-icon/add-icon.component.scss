@@ -1,3 +1,39 @@
-.add-icon{
-    margin-right: 12.17px;
+.add-icon {
+  padding: 14px 16px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  &:hover {
+    background: #edf4ff;
+  }
+  &:focus{
+    background: #C8DFFF;
+  }
+  &:active{
+    background: #B9D5FF;
+  }
+}
+.title {
+  text-align: center;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  display: flex;
+  align-items: center;
+
+  /* Primary / Blue */
+
+  color: #1071ff;
+}
+.svg-icon {
+  margin-right: 12.72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

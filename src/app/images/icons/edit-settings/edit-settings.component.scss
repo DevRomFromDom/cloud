@@ -1,0 +1,27 @@
+.edit-settings__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-settings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+.settings-title {
+text-align: center;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+
+  /* Primary / Blue */
+
+  color: #1071ff;
+}

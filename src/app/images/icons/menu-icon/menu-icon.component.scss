@@ -5,5 +5,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+        background: #EDEDED;
+      }
+      &:focus{
+        background: #E4E4E4;
+      }
+      &:active{
+        background: #DCDCDC;
+      }
 
 }

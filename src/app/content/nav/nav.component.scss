@@ -3,10 +3,40 @@
   width: 100%;
   justify-content: flex-start;
   margin-bottom: 20px;
-  &:last-child{
+  &:last-child {
     margin-right: 0;
+  }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
-}
-.nav-item{
-    margin-right: 40px;
+.nav-item {
+  position: relative;
+  width: auto;
+  padding: 8px 0;
+  margin-right: 20px;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Light theme / Primary */
+
+  color: rgba(0, 0, 0, 0.87);
+  &.active{
+      &::after{
+        content:'';
+        position: absolute;
+        background: #1071FF;
+        width: 100%;
+        height: 2px;
+        border-radius: 50px;
+        bottom: -1.5px;
+
+      }
+  }
 }

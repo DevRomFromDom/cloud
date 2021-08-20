@@ -1,0 +1,18 @@
+<div class="select__container">
+  <label class="select-label">{{title}}</label>
+  <input
+    class="select-el"
+    [value]="currentOption"
+    (click)="showOptionsOnClick($event)"
+  />
+  <div class="options" *ngIf="options">
+    <div
+      class="option"
+      *ngFor="let item of optionsArray"
+      (click)="changeOption(item, $event)"
+      [ngClass]="{ active: item === currentOption }"
+    >
+      {{ item }}
+    </div>
+  </div>
+</div>

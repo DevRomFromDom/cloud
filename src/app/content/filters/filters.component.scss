@@ -1,17 +1,141 @@
-.filters__container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.filters__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
-.filters__main{
-    display: flex;
-    &:last-child{
-        margin-right: 0;
-    }
-}
-.filter-item{
-    margin-right: 30px;
-}
-.sub-filter__info{
-    display: flex;
+.filters__main {
+  display: flex;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-right: 0;
   }
+}
+.filter-item {
+  position: relative;
+  margin-right: 30px;
+  width: 166px;
+  height: 48px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.sub-filter__info {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.search-filter {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  &::before {
+    position: absolute;
+    content: url(../../../assets/icons/Search.svg);
+    left: 0;
+    bottom: 7px;
+    width: 18px;
+    height: 18px;
+    color: grey;
+  }
+}
+.search-input {
+  position: relative;
+  width: 80%;
+  height: 60%;
+}
+.select-program {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.lessons-counter {
+  display: flex;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+
+  /* Light theme / Secondary */
+
+  color: rgba(0, 0, 0, 0.54);
+  padding-right: 40px;
+}
+.filter-settings{
+  background: none;
+  border: none;
+}
+.edit-setings {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  width: 181px;
+  height: 36px;
+  border-radius: 50px;
+  &:hover {
+    background: #edf4ff;
+  }
+  &:focus {
+    background: #c8dfff;
+  }
+  &:active {
+    background: #b9d5ff;
+  }
+}
+.reset-filter {
+  cursor: pointer;
+  width: 124px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  border-radius: 50px;
+
+  /* Light theme / Secondary */
+
+  color: rgba(0, 0, 0, 0.54);
+  &::before {
+    z-index: 0;
+    position: relative;
+    left: 0;
+    top: 0;
+
+    content: url(../../../assets/icons/Close.svg);
+    width: 18px;
+    height: 18px;
+    margin-right: 4.5px;
+  }
+  &:hover {
+    background: #eeeeee;
+  }
+
+  &:active {
+    background: #dcdcdc;
+  }
+}

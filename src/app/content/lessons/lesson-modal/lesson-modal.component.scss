@@ -1,0 +1,62 @@
+.edit-modal__container {
+  position: absolute;
+  right:  10%;
+  bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 162px;
+  height: 88px;
+  padding: 8px 0;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  background: white;
+
+  color: rgba(0, 0, 0, 0.87);
+}
+.btn {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &:hover{
+    background: #F6F6F6;
+  }
+  &:focus{
+    background: #CCCCCC;
+
+  }
+  &:active{
+      background: #BEBEBE;
+  }
+}
+.edit-button {
+  &::before {
+    padding-left: 18px;
+    padding-right: 16.82px;
+    content: url(../../../../assets/icons/edit.svg);
+    width: 13.18px;
+    height: 13.5px;
+  }
+}
+.delete-button {
+  &::before {
+    padding-left: 18px;
+    padding-right: 18.5px;
+    content: url(../../../../assets/icons/delete.svg);
+    width: 10.5px;
+    height: 13.5px;
+  }
+}

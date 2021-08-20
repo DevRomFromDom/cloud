@@ -1,7 +1,10 @@
-import { NgModule, LOCALE_ID } from '@angular/core';
+import { NgModule, LOCALE_ID  } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {registerLocaleData } from "@angular/common"
+import { registerLocaleData } from '@angular/common';
 import localeRu from '@angular/common/locales/ru';
+import {MatDatepickerModule } from "@angular/material/datepicker"
+import {MatNativeDateModule } from "@angular/material/core"
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -19,6 +22,11 @@ import { AddIconComponent } from './images/icons/add-icon/add-icon.component';
 import { PlanningIconComponent } from './images/icons/planning-icon/planning-icon.component';
 import { ProgressIconComponent } from './images/icons/progress-icon/progress-icon.component';
 import { EditButtonComponent } from './images/icons/edit-button/edit-button.component';
+import { EditSettingsComponent } from './images/icons/edit-settings/edit-settings.component';
+import { SelectComponent } from './content/filters/select/select.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DataComponent } from './data/data.component';
+
 
 registerLocaleData(localeRu, 'ru');
 @NgModule({
@@ -39,10 +47,12 @@ registerLocaleData(localeRu, 'ru');
     PlanningIconComponent,
     ProgressIconComponent,
     EditButtonComponent,
-  
+    EditSettingsComponent,
+    SelectComponent,
+    DataComponent,
   ],
-  imports: [BrowserModule],
-  providers: [{provide: LOCALE_ID, useValue: 'ru'}],
+  imports: [BrowserModule, BrowserAnimationsModule, MatDatepickerModule, MatNativeDateModule],
+  providers: [{ provide: LOCALE_ID, useValue: 'ru' }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

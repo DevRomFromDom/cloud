@@ -10,7 +10,22 @@
   line-height: 40px;
   color: rgba(0, 0, 0, 0.87);
 }
-.title__container{
+.title__container {
   margin-bottom: 20px;
   width: 100%;
+}
+.title-info {
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+
+  /* Light theme / Secondary */
+
+  color: rgba(0, 0, 0, 0.54);
 }

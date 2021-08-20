@@ -1,6 +1,14 @@
 .lesson-item__container {
   display: flex;
+  position: relative;
+  left: -8px;
   width: 100%;
+  height: 44px;
+  padding: 0 8px;
+  border-radius: 4px;
+  &:hover{
+    background: #F6F6F6;
+  }
 }
 .lesson-item {
   font-family: Montserrat-normal;
@@ -14,19 +22,65 @@
   /* Light theme / Primary */
   color: rgba(0, 0, 0, 0.87);
   margin: 10px 0;
+
 }
 .lesson-date {
+ 
   width: 10%;
+  @media  (max-width: 992px){
+    width: 12%;
+  }
+  @media  (max-width: 768px){
+    width: 14%;
+  }
 }
 .lesson-name {
-  width: 40%;
+  max-width: 500px;
+  width: 50%;
+  @media  (max-width: 992px){
+    width: 40%;
+  }
+  @media  (max-width: 768px){
+    width: 30%;
+  }
+ 
 }
 .lesson-students {
   width: 10%;
+  @media  (max-width: 992px){
+    width: 12%;
+  }
+  @media  (max-width: 768px){
+    width: 14%;
+  }
 }
 .lesson-trainer {
   width: 10%;
+  @media  (max-width: 992px){
+    width: 12%;
+  }
+  @media  (max-width: 768px){
+    width: 14%;
+  }
 }
 .lesson-progress {
   width: 10%;
+  @media  (max-width: 992px){
+    width: 12%;
+  }
+  @media  (max-width: 768px){
+    width: 14%;
+  }
+}
+.edit-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  @media  (max-width: 992px){
+    width: 12%;
+  }
+  @media  (max-width: 768px){
+    width: 14%;
+  }
 }

@@ -1,9 +1,22 @@
-.add-button__container{
-    height: 52px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+.add-button__container {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
-.title{
-    text-align: center;
+.title {
+  text-align: center;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  display: flex;
+  align-items: center;
+
+  /* Primary / Blue */
+
+  color: #1071ff;
 }

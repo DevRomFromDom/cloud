@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Pipe } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Lesson } from 'src/app/Lesson';
 
 @Component({
@@ -6,11 +6,15 @@ import { Lesson } from 'src/app/Lesson';
   templateUrl: './lessons-item.component.html',
   styleUrls: ['./lessons-item.component.scss'],
 })
-
 export class LessonsItemComponent implements OnInit {
   @Input() lesson: Lesson;
 
+  editModalView: Boolean;
+  showModal(event: Event) {
+    this.editModalView = ! this.editModalView;
+  }
   constructor() {
+    this.editModalView = false;
     this.lesson = {
       date: '',
       name: '',
